@@ -7,16 +7,16 @@ int main() {
     cout << "Digite seu numero: ";
     cin >> num;
 
-    if (num) {
-    } else {
+    if (cin.fail()) { 
         cout << "Erro, digite um numero!" << endl;
         return 0;
-    }   
+    }
 
     if (num % 2 == 0) {
         cout << "O numero " << num << " e par." << endl;
-    } else {
-        cout << "O numero " << num << " e impar." <<endl;
+    }
+    if (num % 2 != 0) {
+        cout << "O numero " << num << " e impar." << endl;
     }
 
 return 0;
